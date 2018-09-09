@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+ <constant name="struts.ui.theme" value="simple" />
+ <!-- <package name="state" extends="jfreechart-default">
+ 	<result-types>
+ 	 	<result-type name="chart" class="org.apache.struts2.dispatcher.ChartResult"></result-type>
+ 	 </result-types>
+ 	 <action name="StateAction"  class="com.studentmanage.action.StateAction">
+          <result name="preSchool" type="chart">
+             /jsp/stateschool.jsp
+          </result>
+          <result name="preCity" type="chart">
+             /jsp/statecity.jsp
+          </result>
+          <result name="preMajor" type="chart">
+             /jsp/statemajor.jsp
+          </result>
+          <result name="preYx" type="chart"> 
+             /jsp/stateyx.jsp
+          </result>
+      </action>
+ </package> -->
+ <package name="mypackage" extends="struts-default,jfreechart-default" namespace="/">
+ 	<result-types>
+ 	 	<result-type name="chart" class="org.apache.struts2.dispatcher.ChartResult"></result-type>
+ 	 </result-types>
+ 	 
+      <action name="login"  class="com.studentmanage.action.LoginAction">
+          <result name="success">
+             welcome.jsp
+          </result>
+          <result name="fail">
+             index.jsp
+          </result>
+      </action>
+      <action name="StateAction"  class="com.studentmanage.action.StateAction">
+          <result name="preSchool" >
+             /jsp/stateschool.jsp
+          </result>
+          <!-- <result name="School" type="chart">
+             <param name="width">600</param>
+             <param name="height">400</param>
+          </result> -->
+          <result name="preCity" type="chart">
+             /jsp/statecity.jsp
+          </result>
+          <result name="preMajor" type="chart">
+             /jsp/statemajor.jsp
+          </result>
+          <result name="preYx" type="chart"> 
+             /jsp/stateyx.jsp
+          </result>
+      </action>
+      <action name="UserAction"  class="com.studentmanage.action.UserAction">
+          <result name="success">
+             /jsp/adduser.jsp
+          </result>
+          <result name="list">
+             /jsp/userlist.jsp
+          </result>
+          <result name="preUpdate">
+             /jsp/adduser.jsp
+          </result>
+          <result name="fail">
+             index.jsp
+          </result>
+      </action>
+      <action name="StudentInfoAction"  class="com.studentmanage.action.StudentInfoAction">
+          <result name="list">
+             /jsp/studentlist.jsp
+          </result>
+          <result name="preadd">
+             /jsp/studentadd.jsp
+          </result>
+          <result name="preUpdate">
+             /jsp/studentadd.jsp
+          </result>
+          <result name="fail">
+             /jsp/studentlist.jsp
+          </result>
+      </action>
+      <action name="QueryAction"  class="com.studentmanage.action.QueryAction">
+          <result name="prequery">
+             /jsp/infoquery.jsp
+          </result>
+      </action>
+      
+      
+ </package>
+ 
+</struts>
+   

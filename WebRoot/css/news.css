@@ -1,0 +1,80 @@
+body{
+   background-color: #F6F6F6;
+   border:0px; margin:0px; padding:0px;
+  }
+  body a{text-decoration: none;}
+  .ctable{
+   margin:0px auto;
+   width: 1024px;
+   border: 2px solid #CCECFF;
+   font-family:"宋体";
+   font-size: 15px;
+  }
+  .toptr{
+   background-color:white;
+   height:50px;
+  }
+  .ctr{
+   color: #59A1C5;
+   font-size: 20px;
+   font-family: "宋体";
+   background-color:#EEEEEE;
+   height:40px;
+  }
+  .ctd1{width:60%; }
+  .ctr2{background-color: #F0F9FE;}  
+  .head{
+   margin:0px auto;
+   position:relative;
+   text-align:left;
+   width: 1024px;
+   height: 40px;
+   background-color: #CFEDFC ;
+  }
+  .main{
+   margin-top:50px;
+  } 
+  table {border-collapse:collapse; }
+  table, td { border:2px solid #CFEDFC; }
+  .newstable3 td {
+   color: #59A1C5;
+   font-size: 20px;
+   background-color:#EEEEEE;
+   height:40px;
+  }
+  .newstable2 {height:50px;}
+  .top{
+   width:1232px;
+   height:80px;
+   _height:80px;
+  }
+  .index_left{
+   width:200px;
+   height:100%;
+   margin-top:10px;
+   display:inline;
+   float:left;
+  }
+  .index_right{
+   width:1024px;
+   height:100%;
+   float:left;
+   margin-top:10px;
+   margin-left:6px;
+   
+   display:inline;
+  }
+  .index_margin{width:1232px; margin:0px auto;}
+  #main_ul{padding-top:10px;}
+  .searchlist{line-height:30px; height:30px; float:left;}
+  .searchsub{width:60px; line-height:30px; height:30px; float:left;}
+  #div_body{background-color:#DDE7F8; min-height:800px; width:200px;}
+  .a1{color:black;}
+  .addtd{
+   width:150px;
+   background-color: #F8F8F8; 
+   color: #3484AD; 
+   font-weight: bold;
+  }
+  .addtdinput{text-align: left;}
+  
